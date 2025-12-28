@@ -1,0 +1,133 @@
+/* Colores y fuentes base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: #333;
+}
+
+header {
+    background: #CB3524; /* Rojo Atleti */
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-bottom: 5px solid #004595; /* Azul Atleti */
+}
+
+.subtitle {
+    font-style: italic;
+    font-weight: bold;
+}
+/* Navegación Mejorada */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 5px 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    transition: all 0.3s ease; /* Transición suave */
+    border-radius: 4px;
+    border: 2px solid transparent;
+}
+
+/* Efecto Hover: Fondo blanco, letras azules y borde rojo */
+nav ul li a:hover {
+    background-color: white;
+    color: #004595;
+    border: 2px solid #CB3524;
+    transform: translateY(-3px); /* Pequeño salto hacia arriba */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+nav ul li a:hover {
+    color: #004595;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #004595;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.form-container {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #CB3524;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Para que el padding no afecte al ancho */
+}
+
+.btn-atleti {
+    background-color: #CB3524;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-atleti:hover {
+    background-color: #004595;
+}
+.leyenda {
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.img-leyenda {
+    width: 100%;
+    max-width: 400px; /* Ajusta el tamaño a tu gusto */
+    height: auto;
+    border-radius: 8px;
+    border: 3px solid #CB3524;
+    margin: 15px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 20px 0;
+}

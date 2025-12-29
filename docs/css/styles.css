@@ -1,9 +1,23 @@
 /* Colores y fuentes base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    margin: 0;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Evitamos el scroll lateral a nivel de body */
+    overflow-x: hidden; 
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 header {
@@ -60,10 +74,10 @@ nav ul li a:hover {
 }
 
 main {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: auto;
-    text-align: center;
+    padding: 20px;
+    max-width: 100%; /* Asegura que no desborde en móviles */
+    margin: 0 auto;
+    flex: 1;
 }
 
 footer {
@@ -71,9 +85,7 @@ footer {
     padding: 15px;
     background: #004595;
     color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    /* Ya no hace falta width: 100% si no es fixed */
 }
 .form-container {
     background: #f9f9f9;
@@ -110,24 +122,141 @@ input[type="text"], input[type="email"], textarea {
 .btn-atleti:hover {
     background-color: #004595;
 }
-.leyenda {
-    margin-bottom: 40px;
-    padding: 20px;
-}
-
-.img-leyenda {
-    width: 100%;
-    max-width: 400px; /* Ajusta el tamaño a tu gusto */
-    height: auto;
-    border-radius: 8px;
-    border: 3px solid #CB3524;
-    margin: 15px 0;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
 
 hr {
     border: 0;
     height: 1px;
     background: #ccc;
     margin: 20px 0;
+}
+/* Contenedor flexible para imagen y texto */
+.contenedor-mito {
+    display: flex;
+    align-items: flex-start; /* Alinea al principio */
+    gap: 30px; /* Espacio entre imagen y texto */
+    margin-top: 20px;
+    text-align: left; /* Asegura que el texto esté a la izquierda */
+}
+
+/* Ajuste de la imagen */
+.img-mito {
+    width: 300px; /* Ancho fijo para mantener la estructura */
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #CB3524;
+    flex-shrink: 0; /* Evita que la imagen se encoja */
+}
+
+.texto-mito {
+    flex: 1; /* El texto ocupa el resto del espacio */
+}
+
+.texto-mito p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+/* Responsivo: Si la pantalla es pequeña, se pone uno bajo otro */
+@media (max-width: 768px) {
+    .contenedor-mito {
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-mito {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+/* Estilos para la sección Hero */
+.hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: justify; /* Da un aspecto más limpio y profesional */
+    line-height: 1.8;
+}
+
+/* Contenedor y Escudo */
+.contenedor-escudo {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding-bottom: 50px; /* Espacio extra antes del footer */
+}
+
+.escudo-central {
+    width: 300px; /* Tamaño ajustado para que no sea gigante */
+    height: auto;
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.2)); /* Le da relieve */
+    transition: transform 0.3s ease;
+}
+
+.escudo-central:hover {
+    transform: scale(1.1); /* Efecto sutil al pasar el ratón */
+}
+/* Contenedor general de secciones para dar aire */
+section {
+    padding: 60px 20px; /* Más espacio arriba y abajo */
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+/* Bloque Tipo A: Fondo Gris muy claro */
+.bloque-claro {
+    background-color: #f9f9f9;
+    border-left: 5px solid #004595; /* Detalle azul */
+}
+
+/* Bloque Tipo B: Fondo Rojo muy suave (Atleti) */
+.bloque-rojo-suave {
+    background-color: #fff5f5;
+    border-left: 5px solid #CB3524; /* Detalle rojo */
+}
+
+/* Bloque Tipo C: Fondo Azul muy suave */
+.bloque-azul-suave {
+    background-color: #f0f4f8;
+    border-left: 5px solid #004595;
+}
+
+/* Mejora de las listas para que no se apelotonen */
+ul li {
+    margin-bottom: 12px;
+    padding-left: 10px;
+}
+/* Contenedor principal para la red */
+.contenedor-red {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilo para cada contenedor individual */
+.tarjeta-companero {
+    padding: 25px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.tarjeta-companero:hover {
+    transform: translateX(10px); /* Efecto de desplazamiento al pasar el ratón */
+}
+
+/* Estilo de botón para los enlaces */
+.boton-enlace {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #004595;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.boton-enlace:hover {
+    background-color: #CB3524;
 }

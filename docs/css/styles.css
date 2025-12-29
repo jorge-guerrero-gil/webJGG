@@ -11,7 +11,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    /* Evitamos el scroll lateral a nivel de body */
     overflow-x: hidden; 
 }
 img {
@@ -21,11 +20,11 @@ img {
 }
 
 header {
-    background: #CB3524; /* Rojo Atleti */
+    background: #CB3524; 
     color: #fff;
     padding: 2rem 1rem;
     text-align: center;
-    border-bottom: 5px solid #004595; /* Azul Atleti */
+    border-bottom: 5px solid #004595; 
 }
 
 .subtitle {
@@ -52,7 +51,7 @@ nav ul li a {
     font-weight: bold;
     text-transform: uppercase;
     padding: 8px 16px;
-    transition: all 0.3s ease; /* Transición suave */
+    transition: all 0.3s ease; 
     border-radius: 4px;
     border: 2px solid transparent;
 }
@@ -62,7 +61,7 @@ nav ul li a:hover {
     background-color: white;
     color: #004595;
     border: 2px solid #CB3524;
-    transform: translateY(-3px); /* Pequeño salto hacia arriba */
+    transform: translateY(-3px); 
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
@@ -75,7 +74,7 @@ nav ul li a:hover {
 
 main {
     padding: 20px;
-    max-width: 100%; /* Asegura que no desborde en móviles */
+    max-width: 100%; 
     margin: 0 auto;
     flex: 1;
 }
@@ -85,7 +84,7 @@ footer {
     padding: 15px;
     background: #004595;
     color: white;
-    /* Ya no hace falta width: 100% si no es fixed */
+
 }
 .form-container {
     background: #f9f9f9;
@@ -105,7 +104,7 @@ input[type="text"], input[type="email"], textarea {
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; /* Para que el padding no afecte al ancho */
+    box-sizing: border-box; 
 }
 
 .btn-atleti {
@@ -132,23 +131,23 @@ hr {
 /* Contenedor flexible para imagen y texto */
 .contenedor-mito {
     display: flex;
-    align-items: flex-start; /* Alinea al principio */
-    gap: 30px; /* Espacio entre imagen y texto */
+    align-items: flex-start; 
+    gap: 30px; 
     margin-top: 20px;
-    text-align: left; /* Asegura que el texto esté a la izquierda */
+    text-align: left; 
 }
 
 /* Ajuste de la imagen */
 .img-mito {
-    width: 300px; /* Ancho fijo para mantener la estructura */
+    width: 300px; 
     height: auto;
     border-radius: 8px;
     border: 2px solid #CB3524;
-    flex-shrink: 0; /* Evita que la imagen se encoja */
+    flex-shrink: 0; 
 }
 
 .texto-mito {
-    flex: 1; /* El texto ocupa el resto del espacio */
+    flex: 1; 
 }
 
 .texto-mito p {
@@ -172,7 +171,7 @@ hr {
     font-size: 1.2rem;
     max-width: 800px;
     margin: 20px auto;
-    text-align: justify; /* Da un aspecto más limpio y profesional */
+    text-align: justify; 
     line-height: 1.8;
 }
 
@@ -181,13 +180,13 @@ hr {
     display: flex;
     justify-content: center;
     margin-top: 40px;
-    padding-bottom: 50px; /* Espacio extra antes del footer */
+    padding-bottom: 50px; 
 }
 
 .escudo-central {
-    width: 300px; /* Tamaño ajustado para que no sea gigante */
+    width: 300px;
     height: auto;
-    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.2)); /* Le da relieve */
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.2)); 
     transition: transform 0.3s ease;
 }
 
@@ -196,7 +195,7 @@ hr {
 }
 /* Contenedor general de secciones para dar aire */
 section {
-    padding: 60px 20px; /* Más espacio arriba y abajo */
+    padding: 60px 20px; 
     margin: 20px 0;
     border-radius: 8px;
 }
@@ -204,13 +203,13 @@ section {
 /* Bloque Tipo A: Fondo Gris muy claro */
 .bloque-claro {
     background-color: #f9f9f9;
-    border-left: 5px solid #004595; /* Detalle azul */
+    border-left: 5px solid #004595; 
 }
 
 /* Bloque Tipo B: Fondo Rojo muy suave (Atleti) */
 .bloque-rojo-suave {
     background-color: #fff5f5;
-    border-left: 5px solid #CB3524; /* Detalle rojo */
+    border-left: 5px solid #CB3524; 
 }
 
 /* Bloque Tipo C: Fondo Azul muy suave */
@@ -219,7 +218,6 @@ section {
     border-left: 5px solid #004595;
 }
 
-/* Mejora de las listas para que no se apelotonen */
 ul li {
     margin-bottom: 12px;
     padding-left: 10px;
@@ -242,7 +240,7 @@ ul li {
 }
 
 .tarjeta-companero:hover {
-    transform: translateX(10px); /* Efecto de desplazamiento al pasar el ratón */
+    transform: translateX(10px); 
 }
 
 /* Estilo de botón para los enlaces */
